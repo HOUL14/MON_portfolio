@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houleye Tall | Projets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">🌸 HT</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙 Mode sombre</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <section>
+            <h1 class="section-title">Mes projets</h1>
+            <div class="projects-grid">
+
+                <!-- Projet 1 : Poubelle Intelligente -->
+                <div class="project-card">
+                    <div class="project-img">
+            <img src="Poubelle intelligent.jpg" alt="poubelle intelligente" style="width: 50%; height: auto; border-radius: 8px;">
+                    </div>
+                    <div class="project-info">
+                        <h3> Poubelle Intelligente</h3>
+                        <p>Projet en groupe utilisant ESP32 pour détecter le niveau de remplissage des poubelles et optimiser la collecte.</p>
+                        <div class="project-tech">
+                            <span>ESP32</span>
+                            <span>C++</span>
+                            <span>Capteurs</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 : Gestion d'un répertoire téléphonique -->
+                <div class="project-card">
+                    <div class="project-img">
+                <img src="nsi_prem_projet1_2.webp" alt="">
+                    </div>
+                    <div class="project-info">
+                        <h3>Gestion de répertoire téléphonique</h3>
+                        <p>Application en langage C permettant d'ajouter, supprimer, rechercher et afficher des contacts.</p>
+                        <div class="project-tech">
+                            <span>Langage C</span>
+                            <span>Structure de données</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 : EcoShop -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="ecoshop-in-world.webp" alt="ecoshop" style="width: 50%; height: auto; border-radius: 8px;">
+                    </div>
+                    <div class="project-info">
+                        <h3>🛒 EcoShop</h3>
+                        <p>Marketplace éco-responsable avec panier dynamique, filtre par catégories et paiement sécurisé.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://github.com/HOUL14" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:houleyetall655@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>📧 houleyetall655@gmail.com | 🌐 github.com/HOUL14</p>
+        <p><a href="cv.pdf" download>📄 Télécharger mon CV</a></p>
+        <p>© 2025 Houleye Tall - Étudiante en L2 Génie Logiciel</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('themeToggle');
+    if(toggle) {
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            toggle.textContent = document.body.classList.contains('light-mode') ? '☀️ Mode clair' : '🌙 Mode sombre';
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houleye Tall | Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">🌸 HT</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙 Mode sombre</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="badge"> Étudiante en L2 Génie Logiciel</div>
+            <h1>Houleye <span class="highlight">Tall</span></h1>
+            <p>Actuellement en Licence 2 Génie Logiciel, Administration & Réseaux à l'ESTM. Passionnée par le développement web, les technologies innovantes et la création de solutions digitales.</p>
+            <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
+            <a href="contact.html" class="btn btn-outline" style="margin-left: 1rem;">Me contacter</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section>
+            <h2 class="section-title">📊 Chiffres clés</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Technologies maîtrisées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Années d'études de la technologie</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Projets en groupe</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">💬 Témoignages</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Houleye est une étudiante sérieuse et passionnée. Elle s'investit pleinement dans ses projets."</p>
+                    <h4>- M.Diop, Professeur</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Très bonne collaboration sur le projet Poubelle Intelligente. Elle est à l'écoute et motivée."</p>
+                    <h4>- Almoudou Traoré, Camarade de classe</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Un excellent esprit d'équipe et une grande capacité d'apprentissage."</p>
+                    <h4>- M. Madiop, Professeur</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://github.com/HOUL14" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:houleyetall655@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>📧 houleyetall655@gmail.com | 🌐 github.com/HOUL14</p>
+        <p><a href="cv.pdf" download>📄 Télécharger mon CV</a></p>
+        <p>© 2025 Houleye Tall - Étudiante en L2 Génie Logiciel</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('themeToggle');
+    if(toggle) {
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            toggle.textContent = document.body.classList.contains('light-mode') ? '☀️ Mode clair' : '🌙 Mode sombre';
+        });
+    }
+</script>
+</body>
+</html>

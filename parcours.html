@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houleye Tall | Parcours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">🌸 HT</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙 Mode sombre</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <section>
+            <h1 class="section-title">Mon parcours</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2007 - 2010</div>
+                    <h3>🌸 Maternelle</h3>
+                    <p>Notre Dame des Savoirs</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2011 - 2016</div>
+                    <h3>📚 Primaire</h3>
+                    <p>Notre Dame des Savoirs</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2017 - 2021</div>
+                    <h3>🏫 Collège</h3>
+                    <p>Abdou Latif Gueye</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2021 - 2024</div>
+                    <h3>🎓 Lycée</h3>
+                    <p>Abdou Latif Gueye</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2024 - présent</div>
+                    <h3>💻 Licence 2 Génie Logiciel</h3>
+                    <p>ESTM - Administration & Réseaux</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 60px 0;">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 3rem; background: rgba(255,255,255,0.03); border-radius: 30px; padding: 2rem;">
+                <div style="flex: 1; min-width: 250px;">
+                    
+                </div>
+                <div style="flex: 2;">
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem; background: linear-gradient(135deg, #d946ef, #f0abfc); -webkit-background-clip: text; background-clip: text; color: transparent;">✨ Qui suis-je ?</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1rem;">
+                        Passionnée par le développement web et les technologies innovantes, je m'appelle <strong>Houleye Tall</strong>, étudiante en <strong>L2 Génie Logiciel, Administration & Réseaux</strong> à l'ESTM.
+                    </p>
+                    <p style="font-size: 1rem; line-height: 1.6; color: #b0b0b0;">
+                        J'ai créé ce portfolio pour partager mes projets et montrer mon évolution. Ce que j'aime par-dessus tout : transformer des idées en solutions digitales fonctionnelles et esthétiques. Rigoureuse, curieuse et passionnée, je suis prête à relever de nouveaux défis techniques.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://github.com/HOUL14" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:houleyetall655@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>📧 houleyetall655@gmail.com | 🌐 github.com/HOUL14</p>
+        <p><a href="cv.pdf" download>📄 Télécharger mon CV</a></p>
+        <p>© 2025 Houleye Tall - Étudiante en L2 Génie Logiciel</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('themeToggle');
+    if(toggle) {
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            toggle.textContent = document.body.classList.contains('light-mode') ? '☀️ Mode clair' : '🌙 Mode sombre';
+        });
+    }
+</script>
+</body>
+</html>
