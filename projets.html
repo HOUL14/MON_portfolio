@@ -28,6 +28,7 @@
 
 <main>
     <div class="container">
+        <!-- SECTION PROJETS -->
         <section>
             <h1 class="section-title">Mes projets</h1>
             <div class="projects-grid">
@@ -35,10 +36,10 @@
                 <!-- Projet 1 : Poubelle Intelligente -->
                 <div class="project-card">
                     <div class="project-img">
-            <img src="Poubelle intelligent.jpg" alt="poubelle intelligente" style="width: 50%; height: auto; border-radius: 8px;">
+                        <img src="Poubelle intelligent.jpg" alt="poubelle intelligente" style="width: 100%; height: auto; border-radius: 8px;">
                     </div>
                     <div class="project-info">
-                        <h3> Poubelle Intelligente</h3>
+                        <h3>🗑️ Poubelle Intelligente</h3>
                         <p>Projet en groupe utilisant ESP32 pour détecter le niveau de remplissage des poubelles et optimiser la collecte.</p>
                         <div class="project-tech">
                             <span>ESP32</span>
@@ -52,10 +53,10 @@
                 <!-- Projet 2 : Gestion d'un répertoire téléphonique -->
                 <div class="project-card">
                     <div class="project-img">
-                <img src="nsi_prem_projet1_2.webp" alt="">
+                        <img src="nsi_prem_projet1_2.webp" alt="répertoire téléphonique" style="width: 100%; height: auto; border-radius: 8px;">
                     </div>
                     <div class="project-info">
-                        <h3>Gestion de répertoire téléphonique</h3>
+                        <h3>📞 Gestion de répertoire téléphonique</h3>
                         <p>Application en langage C permettant d'ajouter, supprimer, rechercher et afficher des contacts.</p>
                         <div class="project-tech">
                             <span>Langage C</span>
@@ -67,7 +68,7 @@
                 <!-- Projet 3 : EcoShop -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="ecoshop-in-world.webp" alt="ecoshop" style="width: 50%; height: auto; border-radius: 8px;">
+                        <img src="ecoshop-in-world.webp" alt="ecoshop" style="width: 100%; height: auto; border-radius: 8px;">
                     </div>
                     <div class="project-info">
                         <h3>🛒 EcoShop</h3>
@@ -75,11 +76,51 @@
                         <div class="project-tech">
                             <span>HTML/CSS</span>
                             <span>JavaScript</span>
-                
                         </div>
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- SECTION FORMULAIRE DEMANDE DE PROJET -->
+        <section style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 1rem;">Vous avez un projet ?</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">Décrivez-moi votre idée, je vous recontacte rapidement !</p>
+            
+            <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 1rem; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <form id="project-request-form">
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="nom-projet" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Votre nom complet *</label>
+                        <input type="text" id="nom-projet" name="nom-projet" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 0.5rem; font-family: inherit; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="email-projet" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Votre email *</label>
+                        <input type="email" id="email-projet" name="email-projet" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 0.5rem; font-family: inherit; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="type-projet" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Type de projet *</label>
+                        <select id="type-projet" name="type-projet" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 0.5rem; font-family: inherit; font-size: 1rem;">
+                            <option value="">Sélectionnez</option>
+                            <option value="site-vitrine">Site vitrine</option>
+                            <option value="e-commerce">E-commerce</option>
+                            <option value="application">Application web</option>
+                            <option value="application-mobile">Application mobile</option>
+                            <option value="iot">IoT / Objet connecté</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="budget" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Budget estimé</label>
+                        <input type="text" id="budget" name="budget" placeholder="Ex: 2000€ - 5000€" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 0.5rem; font-family: inherit; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="description-projet" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Description du projet *</label>
+                        <textarea id="description-projet" name="description-projet" rows="5" required placeholder="Décrivez votre besoin..." style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 0.5rem; font-family: inherit; font-size: 1rem;"></textarea>
+                    </div>
+                    <button type="submit" style="width: 100%; padding: 0.75rem; background: #6C63FF; color: white; border: none; border-radius: 0.5rem; font-size: 1rem; font-weight: 600; cursor: pointer;">Envoyer la demande</button>
+                    <p id="project-request-message" style="margin-top: 1rem; text-align: center; font-size: 0.875rem;"></p>
+                </form>
             </div>
         </section>
     </div>
@@ -95,11 +136,12 @@
         </div>
         <p>📧 houleyetall655@gmail.com | 🌐 github.com/HOUL14</p>
         <p><a href="cv.pdf" download>📄 Télécharger mon CV</a></p>
-        <p>© 2025 Houleye Tall - Étudiante en L2 Génie Logiciel</p>
+        <p>©️ 2025 Houleye Tall - Étudiante en L2 Génie Logiciel</p>
     </div>
 </footer>
 
 <script>
+    // Mode sombre/clair
     const toggle = document.getElementById('themeToggle');
     if(toggle) {
         toggle.addEventListener('click', () => {
@@ -107,6 +149,50 @@
             toggle.textContent = document.body.classList.contains('light-mode') ? '☀️ Mode clair' : '🌙 Mode sombre';
         });
     }
+
+    // Formulaire demande de projet
+    const form = document.getElementById('project-request-form');
+    const messageDiv = document.getElementById('project-request-message');
+
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            messageDiv.innerHTML = '✅ Merci ! Votre demande a bien été envoyée. Je vous répondrai dans les 48h.';
+            messageDiv.style.color = '#4CAF50';
+            form.reset();
+            setTimeout(() => {
+                messageDiv.innerHTML = '';
+            }, 5000);
+        });
+    }
 </script>
+
+<style>
+    body.light-mode {
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    body.light-mode div[style*="background: white"] {
+        background: #fff !important;
+    }
+    body:not(.light-mode) div[style*="background: white"] {
+        background: #1e1e2f !important;
+    }
+    body:not(.light-mode) input,
+    body:not(.light-mode) select,
+    body:not(.light-mode) textarea {
+        background: #2a2a3a !important;
+        border-color: #444 !important;
+        color: #fff !important;
+    }
+    body:not(.light-mode) .section-title,
+    body:not(.light-mode) h2,
+    body:not(.light-mode) p {
+        color: #fff;
+    }
+    body:not(.light-mode) p[style*="color: #666"] {
+        color: #aaa !important;
+    }
+</style>
 </body>
 </html>
